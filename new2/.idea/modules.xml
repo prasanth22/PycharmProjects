@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://D:/python/automate_online-materials/.idea/automate_online-materials.iml" filepath="D:/python/automate_online-materials/.idea/automate_online-materials.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/new2.iml" filepath="$PROJECT_DIR$/.idea/new2.iml" />
     </modules>
   </component>

@@ -1,8 +1,7 @@
 from bs4 import BeautifulSoup
-import requests
-
-res = requests.get('https://www.brainyquote.com/quote_of_the_day')
-soup = BeautifulSoup(res.text, 'lxml')
-
-image_quote = soup.find('img', {'class': ' p-qotd bqPhotoDefault bqPhotoDefaultFw img-responsive'})
-print(image_quote['alt'])
+from urllib2_file import urlaopen
+film_id = '0423409'
+url = 'http://www.imdb.com/title/tt%s/' % (film_id)
+soup = BeautifulSoup(urllib2.urlopen(url).read())
+link = soup.find(itemprop="image")
+print(link["src"])
